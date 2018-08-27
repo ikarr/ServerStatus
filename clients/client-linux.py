@@ -188,6 +188,7 @@ if __name__ == '__main__':
 				NET_IN, NET_OUT = liuliang()
 				Uptime = get_uptime()
 				Load = get_load()
+				Load_1, Load_5, Load_15 = os.getloadavg()
 				MemoryTotal, MemoryUsed, SwapTotal, SwapFree = get_memory()
 				HDDTotal, HDDUsed = get_hdd()
 
@@ -200,6 +201,9 @@ if __name__ == '__main__':
 
 				array['uptime'] = Uptime
 				array['load'] = Load
+				array['load_1'] = Load_1
+				array['load_5'] = Load_5
+				array['load_15'] = Load_15
 				array['memory_total'] = MemoryTotal
 				array['memory_used'] = MemoryUsed
 				array['swap_total'] = SwapTotal
